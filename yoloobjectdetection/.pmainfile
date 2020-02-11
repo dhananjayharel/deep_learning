@@ -1,0 +1,7 @@
+{"mainfile":"demo.py",
+"compilemenucommand":":> ./.testcaseop && python3 demo.py",
+"runmenucommand":"sh ./.runfile.sh",
+"testmenucommand":"sh ./.testcode.sh",
+"outputimage":"person_processed.jpg",
+"viewtype":"file"
+}
