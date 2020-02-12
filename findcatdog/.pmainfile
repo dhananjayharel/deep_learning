@@ -1,0 +1,4 @@
+{"mainfile":"findcatdog.py",
+"compilemenucommand":":> ./.testcaseop && python3 demo.py",
+"runmenucommand":"python3 findcatdog.py"
+}
