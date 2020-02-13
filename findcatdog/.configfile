@@ -6,5 +6,6 @@
 "showLeftPanel":true,
 "showRightPanel":false,
 "showOutline":false,
-"popupoutput":true
+"popupoutput":true,
+"showPopup":true
 }
