@@ -1,10 +1,11 @@
-{"giturl":"https://github.com/dhananjayharel/deep_learning/yoloobjectdetection",
+{"giturl":"https://github.com/dhananjayharel/deep_learning",
 "projectpath":"/home/project/deep_learning/yoloobjectdetection",
 "projectname":"yoloobjectdetection",
 "setdynamicpath":true,
 "reloadwindow":true,
-"showLeftPanel":false,
+"showLeftPanel":true,
 "showRightPanel":false,
 "showOutline":false,
-"popupoutput":true
+"popupoutput":true,
+"showPopup":true
 }

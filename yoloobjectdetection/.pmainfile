@@ -3,5 +3,6 @@
 "runmenucommand":"sh ./.runfile.sh",
 "testmenucommand":"sh ./.testcode.sh",
 "outputimage":"person_processed.jpg",
-"viewtype":"file"
+"viewtype":"file",
+"showPopup":true
 }
