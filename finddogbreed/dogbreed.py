@@ -16,7 +16,7 @@ ResNet50_model = ResNet50(weights='imagenet')
 #model._make_predict_function()  
 
 ################################
-ImageToTest = "White_Persian_Cat.jpg"
+ImageToTest = "German-Shepherd-on-White-00.jpg"
 ###############################
 
 img = image.load_img(ImageToTest, target_size=(224, 224))
