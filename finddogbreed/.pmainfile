@@ -1,6 +1,6 @@
 {"mainfile":"dogbreed.py",
 "compilemenucommand":":> ./.testcaseop && python3 dogbreed.py",
-"runmenucommand":"sh ./.runfile.sh",
+"runmenucommand":":> .testcaseop && sh ./.runfile.sh > ./.testcaseop",
 "outputimage":"output.png",
 "viewtype":"file",
 "showPopup":true
