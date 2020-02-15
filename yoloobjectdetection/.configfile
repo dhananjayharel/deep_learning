@@ -4,8 +4,8 @@
 "setdynamicpath":true,
 "reloadwindow":true,
 "showLeftPanel":true,
-"showRightPanel":false,
-"showOutline":false,
+"showRightPanel":true,
+"showOutline":true,
 "popupoutput":true,
 "showPopup":true
 }
