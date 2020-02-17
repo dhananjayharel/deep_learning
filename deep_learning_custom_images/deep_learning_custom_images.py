@@ -54,7 +54,7 @@ import cv2
 # Technically not necessary in newest versions of jupyter
 # %matplotlib inline
 
-cat4 = cv2.imread('../DATA/CATS_DOGS/train/CAT/4.jpg')
+cat4 = cv2.imread('/home/project/CATS_DOGS/train/CAT/4.jpg')
 cat4 = cv2.cvtColor(cat4,cv2.COLOR_BGR2RGB)
 
 type(cat4)
@@ -63,7 +63,7 @@ cat4.shape
 
 plt.imshow(cat4)
 
-dog2 = cv2.imread('../DATA/CATS_DOGS/train/Dog/2.jpg')
+dog2 = cv2.imread('/home/project/CATS_DOGS/train/DOG/2.jpg')
 dog2 = cv2.cvtColor(dog2,cv2.COLOR_BGR2RGB)
 
 dog2.shape
@@ -117,9 +117,9 @@ Structure Needed:
     * Class n
 """
 
-image_gen.flow_from_directory('../DATA/CATS_DOGS/train')
+image_gen.flow_from_directory('/home/project/CATS_DOGS/train')
 
-image_gen.flow_from_directory('../DATA/CATS_DOGS/test')
+image_gen.flow_from_directory('/home/project/CATS_DOGS/test')
 
 """### Resizing Images
 
@@ -170,12 +170,12 @@ model.summary()
 
 batch_size = 16
 
-train_image_gen = image_gen.flow_from_directory('../DATA/CATS_DOGS/train',
+train_image_gen = image_gen.flow_from_directory('/home/project/CATS_DOGS/train',
                                                target_size=image_shape[:2],
                                                batch_size=batch_size,
                                                class_mode='binary')
 
-test_image_gen = image_gen.flow_from_directory('../DATA/CATS_DOGS/test',
+test_image_gen = image_gen.flow_from_directory('/home/project/CATS_DOGS/test',
                                                target_size=image_shape[:2],
                                                batch_size=batch_size,
                                                class_mode='binary')
@@ -207,7 +207,7 @@ train_image_gen.class_indices
 import numpy as np
 from keras.preprocessing import image
 
-dog_file = '../DATA/CATS_DOGS/train/Dog/2.jpg'
+dog_file = '/home/project/CATS_DOGS/train/DOG/2.jpg'
 
 dog_img = image.load_img(dog_file, target_size=(150, 150))
 

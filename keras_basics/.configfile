@@ -5,6 +5,5 @@
 "reloadwindow":true,
 "showLeftPanel":true,
 "showRightPanel":true,
-"showOutline":true,
-"popupoutput":true
+"showOutline":true
 }
