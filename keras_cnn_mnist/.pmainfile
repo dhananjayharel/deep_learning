@@ -1,0 +1,5 @@
+{"mainfile":"keras_cnn_mnist.py",
+"compilemenucommand":":> ./.testcaseop && python3 keras_cnn_mnist.py",
+"runmenucommand":"python3 keras_cnn_mnist.py",
+"viewtype":"file"
+}

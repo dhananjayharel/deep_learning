@@ -1,0 +1,5 @@
+{"mainfile":"02_keras_cnn_cifar_10.py",
+"compilemenucommand":":> ./.testcaseop && python3 02_keras_cnn_cifar_10.py",
+"runmenucommand":"python3 02_keras_cnn_cifar_10.py",
+"viewtype":"file"
+}

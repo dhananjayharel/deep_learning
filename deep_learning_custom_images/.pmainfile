@@ -1,0 +1,5 @@
+{"mainfile":"deep_learning_custom_images.py",
+"compilemenucommand":":> ./.testcaseop && python3 deep_learning_custom_images.py",
+"runmenucommand":"python3 deep_learning_custom_images.py",
+"viewtype":"file"
+}

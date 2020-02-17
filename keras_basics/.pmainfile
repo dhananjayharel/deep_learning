@@ -1,0 +1,6 @@
+{"mainfile":"keras_basics.py",
+"compilemenucommand":":> ./.testcaseop && python3 keras_basics.py",
+"runmenucommand":"python3 keras_basics.py",
+"outputimage":"output.png",
+"viewtype":"file"
+}

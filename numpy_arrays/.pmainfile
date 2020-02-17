@@ -1,0 +1,5 @@
+{"mainfile":"numpy_arrays.py",
+"compilemenucommand":":> ./.testcaseop && python3 numpy_arrays.py",
+"runmenucommand":"python3 numpy_arrays.py",
+"viewtype":"file"
+}

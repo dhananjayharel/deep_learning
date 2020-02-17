@@ -1,0 +1,7 @@
+{"mainfile":"images_and_numpy.py",
+"compilemenucommand":":> ./.testcaseop && python3 images_and_numpy.py",
+"runmenucommand":":> .testcaseop && sh ./.runfile.sh > ./.testcaseop",
+"outputimage":"plot.png",
+"viewtype":"file",
+"showPopup":true
+}
