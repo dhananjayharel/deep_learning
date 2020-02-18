@@ -3,9 +3,9 @@
 "projectname":"yoloobjectdetection",
 "setdynamicpath":true,
 "reloadwindow":true,
-"showLeftPanel":true,
-"showRightPanel":true,
-"showOutline":true,
+"showLeftPanel":false,
+"showRightPanel":false,
+"showOutline":false,
 "popupoutput":true,
 "showPopup":true
 }
