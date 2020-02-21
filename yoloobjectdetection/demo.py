@@ -1,5 +1,3 @@
-"""Demo for use yolo v3
-"""
 import os
 import time
 import cv2
@@ -8,14 +6,7 @@ from yolo_model import YOLO
 
 
 def process_image(img):
-    """Resize, reduce and expand image.
 
-    # Argument:
-        img: original image.
-
-    # Returns
-        image: ndarray(64, 64, 3), processed image.
-    """
     image = cv2.resize(img, (416, 416),
                        interpolation=cv2.INTER_CUBIC)
     image = np.array(image, dtype='float32')
@@ -26,15 +17,7 @@ def process_image(img):
 
 
 def get_classes(file):
-    """Get classes name.
 
-    # Argument:
-        file: classes name for database.
-
-    # Returns
-        class_names: List, classes name.
-
-    """
     with open(file) as f:
         class_names = f.readlines()
     class_names = [c.strip() for c in class_names]
@@ -43,15 +26,7 @@ def get_classes(file):
 
 
 def draw(image, boxes, scores, classes, all_classes):
-    """Draw the boxes on the image.
 
-    # Argument:
-        image: original image.
-        boxes: ndarray, boxes of objects.
-        classes: ndarray, classes of objects.
-        scores: ndarray, scores of objects.
-        all_classes: all classes name.
-    """
     for box, score, cl in zip(boxes, scores, classes):
         x, y, w, h = box
 
@@ -74,16 +49,7 @@ def draw(image, boxes, scores, classes, all_classes):
 
 
 def detect_image(image, yolo, all_classes):
-    """Use yolo v3 to detect images.
 
-    # Argument:
-        image: original image.
-        yolo: YOLO, yolo model.
-        all_classes: all classes name.
-
-    # Returns:
-        image: processed image.
-    """
     pimage = process_image(image)
 
     start = time.time()
@@ -106,12 +72,11 @@ if __name__ == '__main__':
     all_classes = get_classes(file)
 
 
-    # detect images in test floder.
-    
+    # detect objects in the image 
     image = cv2.imread("person.jpg")
+
+    
     image = detect_image(image, yolo, all_classes)
     cv2.imwrite('person_processed.jpg',image)
     print("SUCCESS")
     print("")
-
-
